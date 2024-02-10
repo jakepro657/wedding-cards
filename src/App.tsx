@@ -8,6 +8,7 @@ import ImageGallery from './components/sections/ImageGallery'
 import Intro from './components/sections/intro'
 import Invitation from './components/sections/Invitation'
 import Map from './components/sections/Map'
+import Share from './components/sections/Share'
 import Video from './components/sections/Video'
 
 import FullScreenMessage from './components/shared/FullScreenMessage'
@@ -80,6 +81,7 @@ function App() {
             <Calendar date={date} />
             <Map location={location} />
             <Contact groom={groom} bride={bride} />
+            <Share date={date} groomName={groom.name} brideName={bride.name} />
             {/* {JSON.stringify(wedding)} */}
         </div>
     )
