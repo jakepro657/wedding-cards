@@ -122,7 +122,7 @@ function Flower({ className }: { className: string }) {
                 fill="none"
                 stroke="#2C3E50"
                 strokeLinecap="round"
-                stroke-linejoin="round"
+                strokeLinejoin="round"
                 strokeMiterlimit="10"
                 strokeWidth="2"
                 x1="32.3"

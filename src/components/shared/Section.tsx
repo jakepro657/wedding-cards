@@ -5,7 +5,7 @@ import styles from './Section.module.scss'
 type Props = {
     className?: string
     children: React.ReactNode
-    title?: string
+    title?: React.ReactNode
 }
 
 const cx = classNames.bind(styles)

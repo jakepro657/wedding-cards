@@ -24,6 +24,7 @@ export interface Location {
         metro: string[]
         bus: string[]
     }
+    address: string
 }
 
 export interface Account {
