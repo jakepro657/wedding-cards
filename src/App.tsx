@@ -12,6 +12,7 @@ import Share from './components/sections/Share'
 import Video from './components/sections/Video'
 
 import FullScreenMessage from './components/shared/FullScreenMessage'
+import Modal from './components/shared/Modal'
 import { Wedding } from './models/wedding'
 
 const cx = classNames.bind(styles)
@@ -82,6 +83,22 @@ function App() {
             <Map location={location} />
             <Contact groom={groom} bride={bride} />
             <Share date={date} groomName={groom.name} brideName={bride.name} />
+
+            <Modal
+                open={true}
+                title="현재 참석자"
+                body={
+                    <div>
+                        <input />
+                    </div>
+                }
+                onLeftButtonClick={() => {
+                    console.log('left')
+                }}
+                onRightButtonClick={() => {
+                    console.log('right')
+                }}
+            />
             {/* {JSON.stringify(wedding)} */}
         </div>
     )
