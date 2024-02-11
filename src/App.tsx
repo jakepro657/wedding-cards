@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind'
 import { useEffect, useState } from 'react'
 import styles from './App.module.scss'
+import AttendCountModal from './components/AttendCountModal'
 import Calendar from './components/sections/Calendar'
 import Contact from './components/sections/Contact'
 import Heading from './components/sections/Heading'
@@ -99,6 +100,7 @@ function App() {
                     console.log('right')
                 }}
             />
+            <AttendCountModal wedding={wedding} />
             {/* {JSON.stringify(wedding)} */}
         </div>
     )
